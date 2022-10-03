@@ -1,0 +1,150 @@
+﻿@charset "UTF-8";
+
+/* 枠無し */
+table.mailform {
+	width: 100%;
+	padding: 10px;
+}
+table.mailform tr th {
+	width: 180px;
+	padding: 7px 0px 7px 0px;
+	border-bottom: solid 1px #CCCCCC;
+	text-align: left;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000099;
+}
+table.mailform tr td {
+	padding: 7px 0px 7px 10px;
+	border-bottom: solid 1px #CCCCCC;
+	font-size: 12px;
+}
+table.mailform tr td ul li,table.mailform tr td ul,table.mailform tr td ol,table.mailform tr td ol li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+th.fmail_error_line,td.fmail_error_line,.fmail_error {
+	background-color: #FFEEEE;
+	color: #FF0000;
+}
+
+
+/* 枠あり */
+table.mailform {
+	margin: 0 auto;
+	width: 95%;
+	border-collapse: collapse;
+}
+table.mailform tr th,
+table.mailform tr td {
+	border: solid 1px #ccc;
+}
+table.mailform tr th {
+	padding: 5px;
+	background: #d8f0fb;
+}
+/* position系が来るとテーブルが切れるので、装飾削除用にする */
+table.mailform tr.table_disable th,
+table.mailform tr.table_disable td {
+	border: 0;
+	background: none;
+}
+
+
+
+/* レスポンシブの設定 */
+@media screen and (max-width: 768px) {
+	/* table.mailform {
+		margin: 0 0 0 -10px;
+		padding: 10px;
+		width: 100%;
+		border-collapse: separate;
+	}
+	table.mailform tr th,
+	table.mailform tr td {
+		display: block;
+		padding: 5px 10px;
+		width: 100%;
+		border-width: 1px 0;
+		font-size: 16px;
+	}
+	table.mailform tr td {
+		padding-bottom: 20px;
+	} */
+}
+
+
+table.mailform tr th{
+	background: #eb3207;
+    color: #fff;
+    line-height: 1.5em;
+    padding: 28px 15px 29px;
+    border: solid 1px #eb3207;
+	width: 30%;
+	font-size: 16px;
+}
+table.mailform tr:first-child th{
+	border-top: solid 1px #eb3207;
+}
+table.mailform tr th {
+    border-bottom: solid 1px #fff;
+    border-right: 0;
+}
+table.mailform tr:last-child th{
+	border-bottom: solid 1px #eb3207;
+}
+table.mailform tr td{
+    background: #fff;
+    border: solid 1px #eb3207;
+	padding: 15px 38px;
+	font-size: 16px;
+	width: 70%;
+	border-left: 0;
+}
+
+
+
+td.fmail_error_line{
+	background-color: #FFEEEE!important;
+	color: #FF0000;
+}
+#fmail input.fmail:focus,#fmail select:focus, #fmail textarea.fmail:focus{
+	outline: 0;
+	 border: solid 1px #ccc1bc;
+}
+/* table.mailform tr:nth-child(10) td{
+	border-bottom:0;
+} */
+@media screen and (max-width:750px){
+	table.mailform{
+		margin: 0;
+		width: 100%;
+		padding: 0;
+	}
+	table.mailform tr th{
+		width: 100%!important;
+		display: block;
+		border-left:solid 1px #eb3207;
+		border-right:solid 1px #eb3207;
+		border-top: 0;
+		border-bottom: 0;
+		font-size: 14px;
+		padding: 15px;
+	}
+	table.mailform tr td{
+		width: 100%!important;
+		display: block;
+		border-left:solid 1px #eb3207;
+		border-right:solid 1px #eb3207;
+		border-top: 0;
+		padding: 15px;
+		font-size: 14px;
+	}
+
+}
+
+
+
+

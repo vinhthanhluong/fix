@@ -1,0 +1,15 @@
+mailform_env	500	メールフォーム設定	mailform setting
+size_class	490	項目サイズ	size setting
+elements	480	項目の設定	elements setting
+must_conditional	470	必須条件の設定	must conditional setting
+send_conditional	460	送信条件の設定	send conditional setting
+return_mail	450	自動返信メールの設定	autoresponder setting
+logview	440	メール履歴管理・閲覧	mail log view and admin
+cart_carriage	430	商品カート送料設定	cart carriage setting
+cart_logview	420	商品カート履歴管理・閲覧	cart log view and admin
+postcode	410	郵便番号辞書更新	postcode update
+prefs	400	環境設定	system preference	null
+users	390	ユーザ管理	user administrative	%%Admin%%
+registry	380	レジストリ管理	regedit	%%Admin%%
+power	370	権限管理	power administrative	%%Admin%%
+informations	340	ホーム画面管理	informations

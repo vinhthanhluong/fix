@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+div#stat {
+	display: none;
+	border: solid 1px #CC0000;
+	margin: 5px;
+	padding: 10px;
+	background-color: #FFCCCC;
+	font-size: 12px;
+	color: #FF0000;
+}
+
+table.sheet {
+	width: 98%;
+	margin: 10px 0px 0px 0px;
+}
+table.sheet tr th {
+	width: 130px;
+	height: auto;
+	padding: 10px 5px 15px 5px;
+	border-top: solid 1px #CCCCCC;
+	text-align: right;
+	font-size: 12px;
+	color: #000099;
+}
+table.sheet tr td {
+	padding: 10px 5px 15px 5px;
+	border-top: solid 1px #CCCCCC;
+	font-size: 12px;
+}
+
+table.sheet tr td span {
+	display: block;
+	padding: 3px 0px 0px 0px;
+	font-size: 12px;
+	color: #666666;
+}
+input, select, textarea {	padding: 2px;}
+input.data {	width: 300px;}
+input.settingdata {	width: 150px;}
+input.settingnum {	width: 40px;	text-align: right;}
+input#from {
+	width: 250px;
+	height: 16px!important;
+	height/**/: 26px;
+	padding: 5px;
+	ime-mode: disabled;
+}
+input#sender {
+	width: 200px;
+	height: 16px!important;
+	height/**/: 26px;
+	padding: 5px;
+	ime-mode: active;
+}
+input#subject {
+	width: 300px;
+	height: 16px!important;
+	height/**/: 26px;
+	padding: 5px;
+	ime-mode: active;
+}
+textarea#body {
+	width: 98%;
+	height: 200px;
+	padding: 5px;
+	ime-mode: active;
+}
+
+input#cart_log_save {
+	margin-top: 5px;
+}
+
+
+textarea.client_info {
+	width: 90%;
+	height: 160px;
+}
+textarea.thanks_message {
+	width: 90%;
+	height: 160px;
+}
+
+/* アフィリエイトタグ周り */
+/* 全体 */
+dl.afiri_reg {
+	margin: 0 0 10px 0;
+	padding: 0 0 5px 0;
+	border: 1px solid #999;
+	border-width: 0 0 1px 0;
+}
+/* パターン */
+dl.afiri_reg dt.afiri_reg_puturn {
+	font-weight: bold;
+}
+/* タグ */
+dl.afiri_reg dd.afiri_reg_tag span {
+	color: #000;
+}
+dl.afiri_reg dd.afiri_reg_tag input.text_long {
+	margin: 0 5px;
+	width: 80%
+}
+
+
+/*-------------------------------------------*/
+/*    個別指定                               */
+/*-------------------------------------------*/
+table.sheet tr td span.caution {
+	display:inline;
+	color:red;
+}
+
+table.sheet tr td span.gold_plan {
+	display:inline;
+	font-weight:bold;
+	color:goldenrod;
+}
+
+table.sheet tr td span.platinum_plan {
+	display:inline;
+	font-weight:bold;
+	color:cadetblue;
+}
+
+table.table_style_none, table.table_style_none td {
+	padding:0 !important;
+	border: none 0 #CCCCCC !important;
+}
+table.table_style_none.input_width {	width: 98%;}
+table.table_style_none td.item {	width: 35px;}
+
+table.sheet tr td input.text_long {	width: 98%;}
+table.sheet table.table_style_none td input.text_long {	width: 80%;}
+
+table.sheet tr td dl dt {	font-weight: normal;}
+table.sheet tr td dl dt input {	margin-right: 3px;}
+table.sheet tr td dl dd {
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+table.sheet tr td dl dd span {
+	display: inline-block;
+	width: 80px;
+	color: #ff0000;
+}
+
+option.caution {	color:red;}
+
+/*初期設定のままエラー*/
+table.sheet tr td .error_img {	display: inline;}
+table.sheet tr .error_bg {	background: #ffeeee;}
+table.sheet tr .error_block {	display: block;	color:red;}
+
+
+
+div#contents p.highlevel {
+	margin: 10px;
+	padding: 4px;
+	width: 150px;
+	height: auto;
+	background: #006699;
+	
+	border-radius: 2px;
+	
+	text-align: center;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+div#contents p.highlevel:hover {	background: #FF8500;}
+
+table.highleveldata {
+	display: none;
+	margin-bottom: 20px;
+}
+div#contents p.highleveldata {
+	display: none;
+	margin: 0 0 1px 10px;
+	padding: 4px;
+	width: 120px;
+	height: auto;
+	background: #EEEEEE/*#A1EBFF*/;
+	
+	border-radius: 2px;
+}

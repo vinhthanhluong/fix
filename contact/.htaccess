@@ -1,0 +1,24 @@
+# perlが許可されてないサーバー用
+# Options -Indexes
+# Options +ExecCGI
+# AddType application/x-httpd-cgi .cgi .pl .pm
+# AddHandler cgi-script cgi pl pm
+
+# ディレクトリインデックス指定
+DirectoryIndex index.cgi index.html index.php
+
+# 過去URL(fmail.cgi→無しへ)のリダイレクト ※ReriteRuleか、Redirectかを使う
+# Redirect permanent /contact/fmail.cgi /contact/
+
+# 過去URL(fmail.cgi→無しへ)のリダイレクト
+# RewriteEngine On
+# RewriteCond %{QUERY_STRING} .+
+# RewriteRule ^fmail.cgi$ http://192.168.11.64/10_Work/contact/$1 [NE,QSA,R=301,L]
+
+# CPIの共用SSLリダイレクト
+# Options +FollowSymLinks
+# <IfModule mod_rewrite.c>
+# RewriteEngine On
+# RewriteBase /~x123053/contact/
+# RewriteRule fmail.cgi ./ [R=301,L]
+# </IfModule>

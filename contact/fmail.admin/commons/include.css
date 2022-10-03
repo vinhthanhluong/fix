@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@import url("base.css");
+@import url("extensions.css");
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* 01.wrapper style                                                       */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+div#wrapper {
+	margin: 0px auto 0px auto;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* 02.header style                                                        */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+div#header {
+	/*border-bottom: solid 1px #CCCCCC;*/
+	height: 50px!important;
+	height/**/: 60px;
+	padding: 10px 0px 0px 10px;
+	overflow: hidden;
+	background-image: url(../images/header_bg.gif);
+	text-align: left;
+}
+div#header h1 {
+	width: 240px;
+	height: 50px;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	/*
+	background-image: url(../images/logo.png);
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/logo.png', sizingMethod='scale');
+	text-indent: -5000px;
+	*/
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* 03.navigator style                                                     */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+div#navigator {
+	clear: both;
+	height: 30px;
+	background-image: url(../images/notice.gif);
+}
+div#navigator ul li {
+	float: left;
+	height: 30px;
+}
+div#navigator ul li div {
+	padding: 7px 15px 0px 0px;
+}
+div#inbox {
+	margin: 0px 0px 0px 2px;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* 04.container style                                                     */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+div#container {
+	clear: both;
+	position: relative;
+	margin: 0px auto 0px auto;
+	text-align: left;
+}
+h2#function_name {
+	height: 20px!important;
+	height/**/: 30px;
+	padding: 10px 0px 0px 10px;
+	position: absolute;
+	top: 0px;
+	left: 200px;
+	border-bottom: solid 1px #3256BB;
+	background-image: url(../images/h2.png);
+	white-space: nowrap;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+hr#eof {
+	clear: both;
+	visibility: hidden;
+	height: 1px;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* 05.contents style                                                      */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+div#contents {
+	position: absolute;
+	top: 0px;
+	left: 200px;
+}
+div#contentsbody {
+	width: 1600px;
+	position: absolute;
+	top: 56px!important;
+	top/**/: 55px;
+	left: 0px;
+	overflow: auto;
+}
+div.section {
+	padding: 20px;
+}
+div.section ul {
+	padding: 5px 0px 5px 20px;
+}
+div#contents h2 {
+	height: 20px!important;
+	height/**/: 30px;
+	padding: 10px 0px 0px 10px;
+	overflow: hidden;
+	border-bottom: solid 1px #3256BB;
+	background-image: url(../images/h2.png);
+	font-size: 12px;
+	color: #FFFFFF;
+}
+div#contents p {
+	padding: 10px 10px 0px 10px;
+	line-height: 1.7em;
+	font-size: 12px;
+}
+div#section textarea {
+	display: block;
+	height: 441px;
+	width: 100%;
+	border: none;
+	line-height: 1.7em;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* 06.sidebar style                                                       */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+div#sidebar {
+	width: 200px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: auto;
+	border-right: solid 1px #CCCCCC;
+	background-color: #EEEEEE;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* 07.footer style                                                        */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+div#footer {
+	position: absolute;
+	width: 100%;
+	height: 41px;
+	top: 1024px;
+	left: 0px;
+	/*border-top: solid 1px #333333;*/
+	background-image: url(../images/footer.gif);
+}
+div#footer span {
+	display: block;
+	padding: 15px 15px 5px 0px;
+	float: right;
+	text-align: right;
+	font-family: "Myriad Pro","Verdana","Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #666666;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/

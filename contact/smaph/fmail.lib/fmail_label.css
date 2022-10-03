@@ -1,0 +1,46 @@
+﻿@charset "UTF-8";
+
+label.fmail_label {
+	display: block;
+	clear: both;
+}
+
+/* チェックしてる時 */
+label.fmail_label_enabled {
+	border: solid 1px #FFCE3C;
+	background-color: #FFCE3C;
+}
+
+
+/* チェックしてない時 */
+label.fmail_label_disabled {
+	/* ラベルの枠線不要の場合は、ここをコメントアウト */
+	border: dashed 1px #CCCCCC;
+}
+label.fmail_label_disabled:hover {
+	background-color: #FFEE7C;
+}
+
+/* チェック共通 */
+label.fmail_label_enabled,
+label.fmail_label_disabled {
+	clear: both;
+	display: block;
+	margin: 1px;
+	padding: 5px;
+	border-radius: 3px;
+	
+	/*radioとcheckboxが変な所で改行する時はここで調整*/
+	width:auto;
+	height:26px;
+	
+	text-indent: 5px;
+}
+
+
+label {
+	cursor: pointer;
+}
+label input {
+	
+}

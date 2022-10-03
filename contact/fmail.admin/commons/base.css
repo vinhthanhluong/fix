@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* 00.base style                                                          */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+*:first-child+html {
+	overflow: hidden;
+}
+body {
+	width: 100%;
+	overflow: auto;
+	margin: 0px auto 0px auto;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+div.hide {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+div.hide span {
+	display: block;
+	padding: 10px;
+}
+th {
+	font-weight: normal;
+}
+img {
+	display: block;
+	border: none;
+}
+p,li {
+	line-height: 1.5em;
+	font-size: 12px;
+	color : #232323;
+}
+li {
+	list-style: none;
+}
+em,strong,h1,h2,h3,dt {
+	font-family:  'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo,sans-serif;;
+	font-weight: bolder;
+}
+h1 {
+	font-size: 18px;
+	color : #232323;
+}
+h2 {
+	font-size: 16px;
+	color : #232323;
+}
+h3 {
+	font-size: 14px;
+	color : #232323;
+}
+a {
+	text-decoration: none;
+}
+a:active {
+	
+}
+a:link {
+	
+}
+a:visited {
+	
+}
+a:hover {
+	color: #CC0000;
+}
+.english {
+	font-family: "Myriad Pro","Verdana","Arial", "Helvetica", "sans-serif";
+	line-height: normal;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+/*個別指定*/
+/*./fmail.admin/commons/conf.cgi内で指定*/
+.pankuzu_caution {
+	font-size:0.8em;
+	color:#ff9999;
+}
+
+input, textarea {	font-size: 12px;}

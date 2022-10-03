@@ -1,0 +1,18 @@
+version	5.041	バージョン情報		メジャー．マイナー<br /><br />でバージョン管理<br /><br />個別に、カスタマイズした場合は、最後に「-C」を付与してください。
+attached_method	1	添付ファイル機能		1がON／0がOFF<br /><br />携帯電話への対応の場合は、「0」で設定してください。<br />formタグから、enctypeが除外されます。
+attached_filesize	100000	添付ファイルディレクトリ容量上限（KB）		KBで入力してください。<br />ディフォルトを100MBで設定しています。
+SMARTPHONE_USER_AGENT	Android,iPhone,BlackBerry	スマートフォン端末識別ユーザエージェント	1	
+MOBILE_USER_AGENT	DoCoMo,WILLCOM,UP.Browser,KDDI,J-PHONE,Vodafone,SoftBank,Semulator	モバイル端末識別ユーザエージェント	1	
+copyright	Copyright(c) Branding Technology Inc. All Rights Reserved. Fmail System	著作権表示		
+dir_datas	./datas/	データ格納ディレクトリ		
+regstry_file	registry.dat	レジストリファイル	1	
+debug	debug	デバッグ用エントリ		
+dir_user_pictures_thum_size	50	ユーザピクチャサムネイル横幅		
+users_dirs	./datas/users/	ユーザディレクトリ		
+dir_user_pictures	./datas/users.picture/	ユーザピクチャディレクトリ		
+dir_sessions	./datas/sessions/	セッション情報保存ディレクトリ		
+dir_module_data	./datas/modules/	モジュール毎データ格納ディレクトリ		
+file_notice	./datas/notice.dat	ティッカー用のログファイル		
+SERVER_PROTOCOL	http	プロトコル		
+file_user	users.cgi	ユーザファイルパス		
+week	日,月,火,水,木,金,土	曜日	1	曜日の配列。英語にもできるよ。

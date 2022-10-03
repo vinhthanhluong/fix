@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+div.search {	margin: 0 0 10px 10px;}
+div.search fieldset {	border: 0;}
+div.search input {	padding: 2px;	width: 100px;}
+div.search input.button {	padding: 2px 5px;	width: 80px;}
+
+/* コンテンツ幅 */
+div#phase {
+	width: 700px;
+}
+
+h3 {
+	background: #FF8400;
+	padding: 10px;
+	line-height: 30px;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+/* ステップ内タイトル */
+h4 {
+	margin: 0 0 36px 0;
+	padding: 5px;
+	border: 1px solid #004DA2;
+	border-width: 0 0 1px 0;
+	background: #004DA2;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+/* セクション */
+div.section-step-first {
+	margin: 10px 0 0 10px;
+}
+div.section-step-second {
+	margin: 0 0 0 10px;
+}
+div.section-step-last {
+	margin: 0 0 0 10px;
+}
+
+/* ボックス */
+div.box {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	height: 150px;
+	border: 4px solid #004DA2;
+	border-radius: 5px;
+}
+
+/* ボックス内の文字 */
+div.box p.title {
+	text-align: center;
+	text-decoration: underline;
+	font-size: 11px;
+}
+
+/* ボックス内の数字 */
+div.box p.title span.value {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+/* 詳細情報 */
+p.detail {
+	float: right;
+	margin: 0 0 5px 0;
+	width: 390px;
+	background: #004DA2;
+	border: 2px solid #004DA2;
+	border-radius: 5px;
+	color: #FFFFFF;
+}
+
+/* 詳細情報の値 */
+p.detail span.value {
+	font-size: 24px;
+}
+
+/* エラー項目 */
+div#contents div.error {
+	float: right;
+	width: 390px;
+	padding: 10px;
+	background: #004DA2;
+	border: 2px solid #004DA2;
+	border-radius: 5px;
+	color: #FFFFFF;
+}
+/* エラー詳細　タイトル */
+div#contents div.error dl dt {
+	float: left;
+	padding: 0 4px;
+	width: 290px;
+	height: 30px;
+	border: 1px dashed #CCCCCC;
+	border-width: 0 0 1px 0;
+	line-height: 30px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+/* エラー詳細　値 */
+div#contents div.error dl dd {
+	float: left;
+	padding: 0 4px;
+	width: 80px;
+	height: 30px;
+	border: 1px dashed #CCCCCC;
+	border-width: 0 0 1px 0;
+	line-height: 30px;
+	text-align: right;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+/* エラー詳細　値＞数値 */
+div#contents div.error dl dd span.value {
+	font-size: 20px;
+}
+
+/* 下矢印 */
+div#contents p.arrow {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 210px;
+}
+p.arrow img {
+	margin: 0 auto;
+	width: 50px;
+}
+
+/* 右矢印 */
+div#contents p.arrow-r {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 50px;
+}
+p.arrow-r img {
+	width: 50px;
+	margin: 29px 0 0 0;
+}
+
+/* 下右矢印 */
+div#contents p.arrow2 {
+	float: left;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 208px;
+}
+p.arrow2 img {
+	margin: 0 auto;
+	width: auto
+}
+
+
+
+/*-------------------------------------------*/
+/*    個別指定                               */
+/*-------------------------------------------*/
+	.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+
+.clearfix { display: inline-table; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */

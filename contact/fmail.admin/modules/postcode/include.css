@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+dl.howto {
+	padding: 10px;
+}
+dl.howto dt {
+	padding: 3px;
+	border-bottom: solid 1px #CCCCCC;
+	font-size: 14px;
+	color: #990000;
+}
+dl.howto dd {
+	padding: 5px;
+	line-height: 1.5em;
+	font-size: 12px;
+}
+
+div#update {
+	display: none;
+	margin: 5px;
+	padding: 10px;
+	border: solid 1px #CC0000;
+	background-color: #FFCCCC;
+	font-size: 12px;
+	color: #FF0000;
+}
+div#updateerror {
+	display: none;
+	margin: 5px;
+	padding: 10px;
+	border: solid 1px #CC0000;
+	background-color: #FFCCCC;
+	font-size: 12px;
+	color: #FF0000;
+}
+
+table.sheet {
+	width: 98%;
+	margin: 10px 0px 0px 0px;
+}
+table.sheet tr th {
+	width: 80px;
+	padding: 10px 5px 15px 5px;
+	border-top: solid 1px #CCCCCC;
+	text-align: right;
+	font-size: 12px;
+	color: #000099;
+}
+table.sheet tr td {
+	padding: 10px 5px 15px 5px;
+	border-top: solid 1px #CCCCCC;
+	font-size: 12px;
+}
+table.sheet tr td span {
+	display: block;
+	padding: 3px 0px 0px 0px;
+	font-size: 12px;
+	color: #666666;
+}
+input, select, textarea {	padding: 2px;}
+input#from {
+	width: 250px;
+	height: 16px!important;
+	height/**/: 26px;
+	padding: 5px;
+	ime-mode: disabled;
+}
+input#sender {
+	width: 200px;
+	height: 16px!important;
+	height/**/: 26px;
+	padding: 5px;
+	ime-mode: active;
+}
+input#subject {
+	width: 300px;
+	height: 16px!important;
+	height/**/: 26px;
+	padding: 5px;
+	ime-mode: active;
+}
+textarea#body {
+	width: 98%;
+	height: 200px;
+	padding: 5px;
+	ime-mode: active;
+}

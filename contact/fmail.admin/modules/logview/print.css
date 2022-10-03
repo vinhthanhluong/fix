@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+}
+
+#header, #navigator, #sidebar, h2, .tree, #footer {
+	display: none;
+}
+div#contents {
+	position: static;
+}
+div#contentsbody {
+	position: static;
+	overflow: visible;
+}
+
+div#contents div.search {
+	margin: 0 0 30px 0;
+	border: 1px solid #004DA2;
+	border-width: 0 0 4px 0;
+}
+
+div#contents div.search p {
+	font-size: 30px;
+}
+div.search input {
+	width: 150px;
+	height: auto;
+	border: none;
+	font-size: 24px;
+}
+.button {
+	display: none;
+}
+
+
+/* FF‚Ì‚İ‘Î‰ ------------------------------ */
+/* ƒRƒ“ƒeƒ“ƒc• */
+div#phase, x:-moz-any-link {	width: 650px;}
+
+p.detail,
+div#contents div.error,
+x:-moz-any-link {	width: 350px;}
+
+div#contents div.error dl dt, x:-moz-any-link {	width: 250px;}

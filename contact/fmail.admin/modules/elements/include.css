@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+input#system_disp_false_html {
+	width: 800px;
+}
+input#on_event {
+	width: 100%;
+}
+div#elements_id_list_select_field {
+	display: none;
+}
+span#button_element_list_field {
+	display: block;
+	cursor: pointer;
+}
+a.add {
+	display: block;
+	width: 140px;
+	height: 40px;
+	overflow: hidden;
+	float: left;
+	margin: 10px 5px;
+	background-image: url(images/add.gif);
+	text-indent: -5000px;
+}
+.sort_button {
+	width: 140px;
+	height: 40px;
+	overflow: hidden;
+	float: left;
+	margin: 10px 5px;
+	border: 0;
+	background: url(images/sort.gif) #fff;
+	text-indent: -5000px;
+}
+.delete_button {
+	width: 140px;
+	height: 40px;
+	overflow: hidden;
+	float: right;
+	margin: 10px 20px 10px 0;
+	border: 0;
+	background: url(images/select_delete.gif) #fff;
+	text-indent: -5000px;
+}
+td.item {	width: auto;}
+td.edit {	width: 60px;}
+td.copy {	width: 60px;}
+td.del {	width: 60px;}
+td.delete_check {
+	width: 80px;
+	background: url(images/select_delete_check.gif) #fff no-repeat 0% 50%;
+}
+td.delete_check label {
+	display: block;
+	width: 80px;
+	height: 20px;
+}
+td.delete_check label input {
+	margin-top: 4px;
+}
+td input.sort_num {
+	margin-top: 13px;
+	margin-right: 5px;
+}
+table.list,table.sheet {
+	clear: both;
+	width: 99%;
+}
+table.list tr td {
+	padding: 0 5px;
+	border-bottom: solid 1px #CCCCCC;
+	font-size: 12px;
+}
+table.list tr td a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color: #333333;
+}
+table.list tr td a:active {	background: #FFCC99;}
+
+table.list tr td input {
+	float: left;
+}
+table.list tr td.adjust_sort {
+	width: 40px;
+}
+table.list tr td.adjust_sort a {
+	float: left;
+	margin: 0 3px;
+	width: 14px;
+	height: 22px;
+}
+div#stat {
+	display: none;
+	margin: 5px;
+	padding: 10px;
+	border: solid 1px #CC0000;
+	background-color: #FFCCCC;
+	font-size: 12px;
+	color: #FF0000;
+}
+
+table.sheet {
+	width: 98%;
+	margin: 0px 0px 0px 0px;
+}
+table.sheet tr th {
+	width: 120px;
+	padding: 10px 5px 15px 5px;
+	border-top: solid 1px #CCCCCC;
+	text-align: right;
+	font-size: 12px;
+	color: #000099;
+}
+table.sheet tr td {
+	padding: 10px 5px 15px 5px;
+	width: 92%;
+	border-top: solid 1px #CCCCCC;
+	font-size: 12px;
+}
+table.sheet#selectvals_format table td {
+	width: 350px;
+	border: 0;
+}
+table.sheet tr td span {
+	display: block;
+	padding: 3px 0px 0px 0px;
+	font-size: 12px;
+	color: #666666;
+}
+table.button tr td {
+	padding: 10px 5px 15px 140px;
+	width: 100%;
+	font-size: 12px;
+}
+input.sort_num {	padding: 0 2px;}
+input#from {
+	width: 250px;
+	height: 16px!important;
+	height/**/: 26px;
+	padding: 5px;
+	ime-mode: disabled;
+}
+input#sender {
+	width: 200px;
+	height: 16px!important;
+	height/**/: 26px;
+	padding: 5px;
+	ime-mode: active;
+}
+input#subject {
+	width: 300px;
+	height: 16px!important;
+	height/**/: 26px;
+	padding: 5px;
+	ime-mode: active;
+}
+textarea#body {
+	width: 98%;
+	height: 200px;
+	padding: 5px;
+	ime-mode: active;
+}
+textarea#type_of_element {
+	width: 98%;
+	height: 100px;
+	padding: 5px;
+	ime-mode: active;
+}
+textarea#element_valus, textarea#element_text {
+	width: 300px;
+}
+
+.html_rows, .html_cols {
+	display: none;
+}
+
+/* HTMLÉ^ÉO */
+textarea#html_tag_free_top, textarea#html_tag_free {
+	width: 100%;
+	height: 200px;
+}
+
+
+/********************************************************/
+/* å¬ï ê›íË                                             */
+/********************************************************/
+table.sheet tr td .caution {	color: #ff0000;}
+p.caution {
+	clear: both;
+	color: #ff0000;
+}
+table.sheet tr td .error_img {	display: inline;}
+table.sheet tr .error_bg {	background: #ffeeee;}
+a.strong {	font-weight: bold;	font-size: 18px;}
+span.strong {	font-weight: bold;	font-size: 14px;}
+span.info {	color: #009900;}
+span.caution {	color: #ff0000;}
+img.must_icon,
+img.or_icon {
+	display: inline-block;
+	line-height: 40px;
+}

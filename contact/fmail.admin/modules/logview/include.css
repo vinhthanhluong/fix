@@ -1,0 +1,142 @@
+@charset "UTF-8";
+div#picture {
+	padding: 3px;
+}
+table.list,table.sheet {
+	clear: both;
+	width: 99%;
+}
+table.list tr td {
+	padding: 10px 5px 10px 5px;
+	border-bottom: solid 1px #CCCCCC;
+	font-size: 12px;
+}
+table.list tr td a {
+	display: block;
+	color: #333333;
+}
+a.add {
+	display: block;
+	width: 70px;
+	height: 20px;
+	overflow: hidden;
+	float: right;
+	margin: 5px;
+	background-image: url(images/add.gif);
+	text-indent: -5000px;
+}
+
+table.sheet tr th {
+	width: 80px;
+	padding: 5px 5px 5px 5px;
+	border-bottom: solid 1px #CCCCCC;
+	text-align: right;
+	font-size: 12px;
+}
+table.sheet tr td {
+	padding: 5px 5px 5px 5px;
+	border-bottom: solid 1px #CCCCCC;
+	font-size: 12px;
+}
+table.sheet tr td span {
+	display: block;
+	font-size: 10px;
+	color: #999999;
+}
+
+table.list tr td.del {
+	width: 60px;
+}
+
+
+form#search {
+	padding: 10px;
+}
+input, select, textarea {	padding: 2px;}
+input#search_q {
+	width: 300px;
+	padding: 3px;
+}
+div.displayLayout {
+	margin: 3px 0px 0px 0px;
+}
+table.displayLayout {
+	
+}
+table.displayLayout tr th {
+	padding: 10px;
+	border-bottom: solid 1px #CCCCCC;
+	font-size: 12px;
+	white-space: nowrap;
+	color: #000099;
+}
+table.displayLayout tr td {
+	padding: 10px;
+	border-bottom: solid 1px #CCCCCC;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+tr.colored {
+	background-color: #E8EEF9;
+}
+span.format {
+	display: block;
+	width: 80px;
+	height: 30px;
+	overflow: hidden;
+	float: right;
+	margin: 2px 5px;
+	background-image: url(images/format.gif);
+	cursor: pointer;
+	text-indent: -5000px;
+}
+span.format:hover {	background-position: 80px 0;}
+
+a.download.codebr {
+	display: block;
+	width: 170px;
+	height: 30px;
+	overflow: hidden;
+	float: right;
+	margin: 2px;
+	background-image: url(images/download_codebr.gif);
+	cursor: pointer;
+	text-indent: -5000px;
+}
+a.download.codebr:hover {	background-position: 170px 0;}
+
+a.download.br {
+	display: block;
+	width: 170px;
+	height: 30px;
+	overflow: hidden;
+	float: right;
+	margin: 2px;
+	background-image: url(images/download_br.gif);
+	cursor: pointer;
+	text-indent: -5000px;
+}
+a.download.br:hover {	background-position: 170px 0;}
+
+a.download.nobr {
+	display: block;
+	width: 170px;
+	height: 30px;
+	overflow: hidden;
+	float: right;
+	margin: 2px;
+	background-image: url(images/download_nobr.gif);
+	cursor: pointer;
+	text-indent: -5000px;
+}
+a.download.nobr:hover {	background-position: 170px 0;}
+
+.info { color: #009900;}
+
+form.dataselect {
+	margin: 5px 0 0 10px;
+}
+form.dataselect span {
+	font-size: 12px;
+}
+

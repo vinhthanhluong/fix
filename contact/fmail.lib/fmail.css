@@ -1,0 +1,940 @@
+﻿@charset "UTF-8";
+
+@import url("fmail_table.css");
+@import url("fmail_dl.css");
+@import url("fmail_label.css");
+
+div#mailfrom_hidden_object {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+div#twex {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	overflow: hidden;
+	margin: 0px;
+	background-color: #000000;
+	text-align: center;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.60;
+	-khtml-opacity: 0.60;
+	opacity: 0.60;
+}
+img#loading_proccess_image {
+	position: absolute;
+	z-index: 1000;
+}
+
+/* tableパターン */
+table div.fmail_must {
+	float: right;
+	width: 30px;
+	height: 16px;
+	overflow: hidden;
+	margin: 0px 5px 0px 5px;
+	background-image: url(../images/mfp_must.gif);
+	text-indent: -50000px;
+}
+
+/* レスポンシブの設定 */
+@media screen and (max-width: 768px) {
+	table div.fmail_must {
+		display: inline-block;	
+		/* float: none; */
+	}
+}
+
+
+table div.fmail_or {
+	float: right;
+	width: 60px;
+	height: 16px;
+	overflow: hidden;
+	margin: 0px 0px 0px 5px;
+	background-image: url(../images/mfp_or.gif);
+	text-indent: -50000px;
+}
+/* dlパターン */
+dl dt span.name  {
+	display: inline-block;
+	overflow: hidden;
+	height: 22px;
+}
+dl div.fmail_must {
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 0 0 5px;
+	padding: 0;
+	width: 30px;
+	height: 22px;
+	background: url(../images/mfp_must.gif) no-repeat;
+	background-position: center center;
+	text-indent: -50000px;
+}
+dl div.fmail_or {
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 0 0 5px;
+	padding: 0;
+	width: 60px;
+	height: 22px;
+	background: url(../images/mfp_or.gif) no-repeat;
+	background-position: center center;
+	text-indent: -50000px;
+}
+
+/* テーブル分割 */
+#fmail tr.fmail_separate th {	padding: 0;	width: 150px;	height: 100px;	text-indent: -9999px;}
+#fmail tr.fmail_separate td {	padding: 0;	width: 430px;	height: 100px;	vertical-align: top;}
+#fmail tr.fmail_separate td div.fmail_position {
+	position: relative;
+}
+#fmail tr.fmail_separate td div.fmail_position .elements {
+	position: absolute;
+	top: 0;
+	left: -170px;
+	margin: 10px;
+	padding: 5px;
+	width: 580px;
+	background: #EEF;
+	z-index: 99;
+}
+
+/* レスポンシブの設定 */
+@media screen and (max-width: 768px) {
+	#fmail tr.fmail_separate th {	display: none;}
+	#fmail tr.fmail_separate td {	width: 100%;	height: 220px;}
+	#fmail tr.fmail_separate td div.fmail_position .elements {		left: -10px;		width: 100%;	}
+}
+
+
+/* テーブル分割　タイトル */
+#fmail tr.fmail_separate_title th {	padding: 0;	width: 150px;	height: 40px;	text-indent: -9999px;} /* タイトル枠の横幅と高さ */
+#fmail tr.fmail_separate_title td {	padding: 0;	width: 430px;	height: 40px;	vertical-align: top;} /* タイトル枠の横幅と高さ */
+#fmail tr.fmail_separate_title td div.fmail_position {
+	position: relative;
+}
+#fmail tr.fmail_separate_title td div.fmail_position .elements {
+	position: absolute;
+	top: 0;
+	left: -170px;
+	margin: 10px;
+	padding: 5px;
+	width: 570px;
+	height: 20px;
+	background: #66AAEE; /* タイトル背景色 */
+	z-index: 99;
+}
+#fmail tr.fmail_separate_title td div.fmail_position .elements p {
+	line-height: 20px; /* タイトル文字の高さ */
+	font-weight: bold; /* タイトル文字の太さ */
+	font-size: 16px; /* タイトル文字の大きさ */
+}
+
+/* レスポンシブの設定 */
+@media screen and (max-width: 768px) {
+	#fmail tr.fmail_separate_title th {	display: none;}
+	#fmail tr.fmail_separate_title td {	width: 100%;	height: 70px;}
+	#fmail tr.fmail_separate_title td div.fmail_position .elements {		left: -10px;		padding: 5px;		width: 100%;	}
+	#fmail tr.fmail_separate_title td div.fmail_position .elements {		height: 40px;}
+}
+
+/* 必須項目チェック */
+#fmail tr.fmail_separate_mustchecker th {	padding: 0;	width: 150px;	height: 0;	text-indent: -9999px;	border-bottom-width: 0;}
+#fmail tr.fmail_separate_mustchecker td {	padding: 0;	width: 430px;	height: 0;	vertical-align: top;	border-bottom-width: 0;}
+#fmail tr.fmail_separate_mustchecker td div.fmail_position_mustchecker .elements_mustchecker {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 99;
+	
+	margin: 0;
+	padding: 10px;
+	width: 150px;
+	height: 50px;
+	background: #CCC;
+	border: 1px solid #333;
+	border-radius: 10px;
+	
+	line-height: 26px;
+	text-align: center;
+	font-size: 14px;
+}
+#fmail tr.fmail_separate_mustchecker td div.fmail_position_mustchecker .elements_mustchecker .caution_mustchecker {
+	display: inline-block;
+	margin-left: 5px;
+	
+	font-weight: bold;
+	font-size: 18px;
+	color: #FF3333;
+}
+
+/* レスポンシブの設定 */
+@media screen and (max-width: 768px) {
+	#fmail tr.fmail_separate_mustchecker th {	display: none;}
+	#fmail tr.fmail_separate_mustchecker td {	width: 95%;}
+}
+
+
+/* ------------------------------------------ */
+
+
+div#fmail_thankspage {
+	padding: 15px;
+	line-height: 1.5em;
+	font-size: 12px;
+}
+span#fmail_title_default,span#fmail_title_confirm,span#fmail_title_error,span#fmail_title_thanks {
+	display: block;
+	margin: 0 auto;
+	width: 580px;
+	height: 44px;
+	overflow: hidden;
+	text-indent: -50000px;
+}
+span#fmail_title_default {
+	background: url(../images/title_default.png) no-repeat;
+}
+span#fmail_title_confirm {
+	background: url(../images/title_confirm.png) no-repeat;
+}
+span#fmail_title_error {
+	background: url(../images/title_error.png) no-repeat;
+}
+span#fmail_title_thanks {
+	background: url(../images/title_thanks.png) no-repeat;
+}
+
+/* レスポンシブの設定 */
+@media screen and (max-width: 768px) {
+	span#fmail_title_default {		display: none;	}
+	span#fmail_title_confirm {		display: none;	}
+	span#fmail_title_error {		display: none;	}
+	span#fmail_title_thanks {		display: none;	}
+}
+
+form.fmail_submit,form.fmail_cancel {
+	float: left;
+	padding: 5px;
+}
+
+form#fmail {
+	margin: 0px auto 0px auto;
+	padding: 0px;
+}
+
+span.fmail_error {
+	display: block;
+	padding: 2px 0px 5px 17px;
+	background-image: url(../images/mfp_error.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+}
+span.fmail_example {
+	font-size: 12px;
+	color: #666666;
+}
+p.fmail_note {
+	padding: 5px 0px 0px 0px;
+	font-size: 12px;
+	color: #666666;
+}
+ol.fmail_checkbox_list {
+	width:90%;
+}
+ol.fmail_radio_list li,ol.fmail_checkbox_list li {
+	float: left;
+	padding: 5px;
+	list-style: none;
+}
+
+div.fmail_error_message {
+	margin: 10px;
+	padding: 5px;
+	border: solid 1px #FF0000;
+	background-color: #FFEEEE;
+	text-align: center;
+	color: #FF0000;
+	font-size: 12px;
+}
+
+#fmail input.fmail {
+	margin: 1px 0;
+	padding: 2px;
+	width: 170px;
+}
+
+/* レスポンシブの設定 */
+@media screen and (max-width: 768px) {
+	#fmail input.fmail {		font-size: 18px;	}
+	#fmail input.fmail[type="text"],
+	#fmail input.fmail[type="email"],
+	#fmail input.fmail[type="number"],
+	#fmail input.fmail[type="url"],
+	#fmail input.fmail[type="tel"] {
+		width: 80% !important;
+		background: #ffffff;
+		border: 1px solid #999999;
+	}
+	#fmail .zipcode input.fmail {
+		width: 150px !important;
+	}
+	#fmail select.fmail {		font-size: 16px;	}
+	#fmail textarea.fmail {		font-size: 16px;	}
+	#fmail .reserve select {		font-size: 16px;	}
+}
+
+#fmail li input.fmail {
+	width: auto;
+}
+
+#fmail select.fmail {	padding: 2px;}
+
+#fmail textarea.fmail {
+	padding: 2px;
+	width: 300px;
+}
+/* レスポンシブ */
+@media screen and (max-width: 768px) {	#fmail textarea.fmail {		width: 90% !important;	}}
+
+#fmail input.fmail_file {
+	margin: 0 !important;
+	height: 23.5px;
+	line-height: 20px;
+}
+#fmail input.ffcancel {
+	margin-top: 2px;
+	margin-left: 3px;
+	padding: 2px;
+	height: 23.5px;
+}
+
+
+/*-------------------------------------------------------*/
+/*送信ボタンを画像化したい場合は下記を変更ください       */
+/* 確認画面へ進む ./fmail/fmail.lib/submit.confirm.js    */
+/* 送信           ./fmail/fmail.lib/submit.send.js       */
+/* 前のページへ   ./fmail/fmail.lib/submit.cancel.js     */
+/* 上記ファイル内のコメントアウト切り替えを行う          */
+/*-------------------------------------------------------*/
+/*ボタンの位置*/
+.button {
+	width: 100%;
+	margin-top: auto;
+	text-align: center;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 768px) {	.button {		margin-top: 10px;	}}
+
+
+/*素ボタンの高さ*/
+.button input.default_button {
+	height:40px;
+	padding:10px;
+}
+.button form.fmail_cancel {
+	width:50%;
+	text-align:right;
+}
+.button form.fmail_submit {
+	width:50%;
+	text-align:left;
+}
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+
+
+
+/*確認ボタン*/
+.submit_confirm_button {
+	width:160px;
+	height:35px;
+	border-width:0;
+	border-style:none;
+	background:url(../images/submit_button.jpg);
+}
+.submit_confirm_button:hover {
+	background-position: right bottom;
+}
+
+/*送信ボタン*/
+.submit_send_button {
+	width:160px;
+	height:35px;
+	border-width:0;
+	border-style:none;
+	background:url(../images/send_button.jpg);
+}
+.submit_send_button:hover {
+	background-position: right bottom;
+}
+
+/*戻るボタン*/
+.submit_cancel_button {
+	width:160px;
+	height:35px;
+	border-width:0;
+	border-style:none;
+	background:url(../images/back_button.jpg);
+}
+.submit_cancel_button:hover {
+	background-position: right bottom;
+}
+
+/*送信完了画面*/
+.site_top a{
+	display:block;
+	width:160px;
+	height:35px;
+	margin: 1em auto;
+	border-width:0;
+	border-style:none;
+	background:url(../images/top_button.jpg);
+	text-align:center;
+	/* text-indent:-9999px; */
+}
+.site_top a:hover{
+	background-position: right bottom;
+}
+
+/*郵便番号のボタン*/
+form#fmail input.postcode {
+	width: 70px;
+	padding: 2px;
+}
+
+
+/*-------------------------------------------------------*/
+/*
+/*  個別指定
+/*
+/*-------------------------------------------------------*/
+#fmail .caution { color: #ff0000;}
+#fmail .info { color: #009900;}
+#fmail .strong { font-weight: bold;}
+.fmail_caution { color: #ff0000;}
+
+/* 送信完了画面 */
+#fmail_thankspage .caution { color: #ff0000;}
+#fmail_thankspage .info { color: #009900;}
+#fmail_thankspage .strong { font-weight: bold;}
+
+#fmail .remail { margin-top: 5px;}/*メール再入力部分*/
+#fmail li { display: block; float: left; padding-left: 2px;}
+* html #fmail li { white-space: nowrap;}
+*:first-child+html #fmail li { white-space: nowrap;}
+
+/* ZIPCODE */
+#fmail .zipcode input.fmail {
+	width: 100px;
+}
+
+/* URL */
+#fmail .url input {
+	width: 300px;
+}
+
+/* カレンダーアイコン */
+#fmail .datedata input {
+	float: left;
+}
+.ui-datepicker-trigger {
+	float: left;
+	margin: 0 0 0 5px;
+	padding: 0;
+	background: none;
+}
+.ui-datepicker-trigger,
+.ui-datepicker-trigger img {
+	width: 24px;
+	height: 24px;
+	border: 0;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 768px) {	#fmail .datedata td {		height: 24px;	}}
+
+
+
+/*-------------------------------------------------------*/
+/*
+/*  カート用項目
+/*  ※お問い合わせ入力画面で表示させたくない場合に指定
+/*-------------------------------------------------------*/
+/*
+tr#r_en1339056176 {
+	display: none;
+}
+*/
+
+
+.fmail_checkbox_list ,.fmail_radio_list {
+	padding-left:0;
+}
+#fmail li{
+	display: flex;
+	padding-left: 2px;
+	display: flex;
+	line-height: 1.5em;
+	align-items: center;
+}
+#fmail .size_5 input, #fmail .size_5 select, #fmail .size_5 textarea{
+	width: 50%!important;
+}
+#fmail input[type="text"], #fmail select{
+	margin-right: 5px;
+}
+#fmail select{
+	padding: 8px!important;
+}
+#fmail input.fmail{
+	padding: 10px 10px 8px 8px;
+	border: solid 1px #ccc1bc;
+}
+#fmail .zipcode input.fmail{
+	width: 150px;
+}
+form#fmail input.postcode{
+	width: auto;
+	padding: 12px 15px 10px;
+	cursor: pointer;
+	background: #0028f0;
+	color: #fff;
+	border: 0;
+	transition: all 0.5s ease;
+	position: relative;
+	top: -1px;
+}
+form#fmail input.postcode:hover{
+	transition: all 0.5s ease;
+	opacity: 0.7;
+}
+
+#fmail select.fmail{
+	padding: 8px;
+	border: solid 1px #ccc1bc;
+}
+span.fmail_error {
+	display: block;
+	font-size: 12px;
+	background: url(../images/mfp_error.gif) left 0 top 3px no-repeat;
+	position: relative;
+}
+.ui-datepicker-trigger, .ui-datepicker-trigger img{
+	margin-top: 4px;
+	height: auto;
+}
+#fmail textarea.fmail{
+	padding: 8px;
+	width: 98%!important;
+	height: 100px;
+	resize: vertical;
+	border: solid 1px #ccc1bc;
+}
+.fmail_checkbox_list label input, .fmail_radio_list label input{
+	position: relative;
+	top: 3px;
+}
+
+div#fmail_thankspage{
+	border: solid 2px #eb3207;
+	font-size: 16px;
+}
+#fmail select{
+	border-color: #ccc1bc;
+}
+#d_en1245934419 select,#d_en1242149556 select{
+	margin: 0 1px;
+}
+#d_en1245939490 span.fmail_error{
+	margin-left: 0;
+}
+
+#fmail input.fmail_file {
+	height: auto;
+	line-height: 1.5em;
+	border: solid 1px #0028f0;
+	padding: 2px;
+}
+table div.fmail_must{
+	position: relative;
+	top: 6px;
+}
+span#fmail_title_default, span#fmail_title_confirm, span#fmail_title_error, span#fmail_title_thanks{
+	display: none;
+}
+label.fmail_label_enabled{
+	background-color: #eb3207;
+	border: solid 1px #eb3207;
+	color: #fff;
+}
+#d_en1655367791 label{
+	border: solid 1px #eb3207;
+}
+#d_en1655367791 input{
+	display: none;
+}
+#d_en1655367791 label{
+	padding: 20px 10px;
+}
+#fmail li input.fmail{
+	position: relative;
+	top: 0;
+}
+#fmail input.ffcancel:hover, #fmail input.fmail_file:hover, #fmail select:hover{
+	cursor: pointer;
+}
+.submit_confirm_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	color: #323232;
+	height: 100%;
+	text-align: center;
+	padding: 13px 20px 10px;
+	text-decoration: none;
+	border: solid 2px #eb3207;
+	transition: all 0.4s ease;
+	width: 260px;
+	margin: 40px auto 0;
+	line-height: 1.5em;
+	background: #fff url(../images/under_arrow.svg) no-repeat right 20px top 53%;
+	background-size: 14px auto;
+}
+
+.submit_confirm_button:hover {
+	background: #eb3207 url(../images/under_arrow.svg) no-repeat right 20px top 53%;
+	background-size: 14px auto;
+	color: #fff;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+.submit_confirm_button:focus{
+	outline: 0;
+}
+/*送信ボタン*/
+.submit_send_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	color: #323232;
+	text-align: center;
+	padding: 13px 20px 10px;
+	text-decoration: none;
+	border: solid 2px #eb3207;
+	transition: all 0.4s ease;
+	width: 260px;
+	margin: 40px auto 0 5px;
+	line-height: 1.5em;
+	background: #fff url(../images/under_arrow.svg) no-repeat right 20px top 53%;
+	background-size: 14px auto;
+}
+.submit_send_button:hover {
+	background: #eb3207 url(../images/under_arrow.svg) no-repeat right 20px top 53%;
+	background-size: 14px auto;
+	color: #fff;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+/*戻るボタン*/
+.submit_cancel_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	text-align: center;
+	
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	color: #323232;
+	text-align: center;
+	padding: 13px 20px 10px;
+	text-decoration: none;
+	border: solid 2px #eb3207;
+	transition: all 0.4s ease;
+	width: 260px;
+	margin: 40px 5px 0 auto;
+	line-height: 1.5em;
+	background: #fff url(../images/under_arrow01.svg) no-repeat left 20px top 53%;
+	background-size: 14px auto;
+}
+.submit_cancel_button:hover {
+	background: #eb3207 url(../images/under_arrow01.svg) no-repeat left 20px top 53%;
+	background-size: 14px auto;
+	color: #fff;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+/*送信完了画面*/
+
+.site_top a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	color: #323232;
+	padding: 13px 20px 10px;
+	text-decoration: none;
+	border: solid 2px #eb3207;
+	transition: all 0.4s ease;
+	width: 260px;
+	margin: 40px auto 0;
+	line-height: 1.5em;
+	background: #fff url(../images/under_arrow.svg) no-repeat right 20px top 53%;
+	background-size: 14px auto;
+}
+.site_top a:hover{
+	background: #eb3207 url(../images/under_arrow.svg) no-repeat right 20px top 53%;
+	background-size: 14px auto;
+	color: #fff;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+#fmail select{
+	visibility: visible!important;
+}
+#h_en1655367791, #h_en1655368038, #h_en1655367978, #h_en1663991936, #h_en1663991268{
+	display: none;
+}
+#d_en1655367791, #d_en1655368038, #d_en1655367978, #d_en1663991936, #d_en1663991268{
+	width: 100%!important;
+	border: 0;
+	padding: 0;
+}
+#d_en1655367791 .fmail_radio_list {
+	display: flex;
+	justify-content: center;
+	padding: 0 0 40px;
+}
+#d_en1663991936 .center{
+	text-align: center;
+	font-weight:600;
+	padding-top:20px;
+}
+@media screen and (max-width: 640px){
+	.fmail_checkbox_list ,.fmail_radio_list {
+		padding-left:0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#fmail .info {
+		font-size: 14px;
+	}
+	.container{
+		width: 100%;
+		padding: 0 3%;
+	}
+	span.fmail_error{
+		margin-left:0;
+		background: url(../images/mfp_error.gif)left 0 top 15px no-repeat;
+	}
+
+	#d_en1398753491{
+		position: relative;
+	}
+	.ui-datepicker-trigger, .ui-datepicker-trigger img {
+		margin-top: 3px;
+		position: absolute;
+		top: 5px;
+		right: 8px;
+	}
+
+	.ffcancel, #fmail input.fmail_file{
+		display: block;
+		margin: 10px auto!important;
+		height: auto;
+	}	
+	#fmail input.fmail_file{
+		padding: 5px;
+		width: 100%!important;
+	}
+	p.fmail_note{
+		text-align: center;
+	}
+	#fmail li{
+		margin: 5px;
+		width: 46%;
+		padding-left: 0;
+	}
+	#fmail li label{
+		display: inline-block;
+		width: 100%;
+		text-align: left;
+	}
+	#fmail li input.fmail{
+		top: 1px;
+	}
+	table div.fmail_must{
+		top: 2px;
+	}
+	#fmail .datedata td{
+		height: auto;
+	}
+	#fmail input.fmail[type="text"], #fmail input.fmail[type="email"], #fmail input.fmail[type="number"], #fmail input.fmail[type="url"], #fmail input.fmail[type="tel"]{
+		width: 100%!important;
+	}
+	#fmail .size_5 input, #fmail .size_5 select, #fmail .size_5 textarea{
+		width: 100%!important;
+	}
+	#fmail .size_3 input, #fmail .size_3 select, #fmail .size_3 textarea{
+		width: 100%!important;
+	}
+	#fmail select.fmail{
+		width: 100%!important;
+	}
+	#fmail .zipcode input.fmail{
+		width: 100%!important;
+		margin-bottom: 10px;
+	}
+	#fmail input.fmail{
+		padding: 6px 10px 4px 10px;
+	}
+	#d_en1245934419,#d_en1242149556,#d_en1331812866{
+		text-align: center;
+	}
+	ol.fmail_checkbox_list, ol.fmail_radio_list{
+		width: 100%!important;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	#fmail .datedata input{
+		float:none;
+		width: 90%!important;
+	}
+	#fmail textarea.fmail{
+		width: 100%!important;
+	}
+
+	div#fmail_thankspage{
+		border: solid 2px #eb3207;
+		font-size: 12px;
+	}
+	form#fmail input.postcode{
+		width: 200px!important;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
+	
+	.submit_cancel_button, .submit_send_button{
+		width: 100%;
+		padding: 15px 30px 13px;
+	}
+}
+@media screen and (max-width:520px){
+	#fmail li{
+		width: 100%;
+	}
+}
+@media screen and (max-width:475px){
+	.button form.fmail_cancel{
+		width: 100%;
+		text-align: center;
+	}
+
+	.button form.fmail_submit{
+		width: 100%;
+		text-align: center;
+	}
+	.submit_cancel_button, .submit_send_button{
+		width: 80%;
+		float: none;
+		text-align: center;
+		margin: 0 10px;
+	}
+	.submit_cancel_button{
+		margin: 10px auto;
+	}
+	.submit_send_button{
+		margin: 0 auto 0;
+	}
+	.site_top a{
+		width: 90%;
+	}
+	span.fmail_error {
+		margin-left: 0;
+		background: url(../images/mfp_error.gif)left 0 top 9px no-repeat;
+	}
+}
+@media screen and (max-width: 375px) {
+	.submit_cancel_button, .submit_send_button{
+		width: 95%;
+	}
+}
+@media screen\0 {
+	table div.fmail_must{
+		position: relative;
+		top: 5px;
+	}
+	span.fmail_error{
+		background: url(../images/mfp_error.gif)left 0 top 6px no-repeat;
+	}
+	dl div.fmail_must{
+		margin: -3px 0 0 5px;
+	}
+	label.fmail_label_enabled, label.fmail_label_disabled{
+		padding: 10px 5px 2px;
+	}
+	form#fmail input.postcode{
+		padding: 16px 15px 12px;
+	}
+	#fmail input.fmail{
+		padding: 12px 10px 6px 8px;
+	}
+	#fmail li input.fmail{
+		top: 1px;
+	}
+	#fmail select{
+		padding: 12px 8px 6px!important;
+	}
+}
+/*Safari*/
+@media not all and (min-resolution:.001dpcm) { 
+	@supports (-webkit-appearance:none) and (stroke-color:transparent) { 
+		table div.fmail_must{
+			position: relative;
+			top: 3px;
+		}
+		span.fmail_error{
+			background: url(../images/mfp_error.gif)left 0 top 9px no-repeat;
+		}
+
+	} 
+}

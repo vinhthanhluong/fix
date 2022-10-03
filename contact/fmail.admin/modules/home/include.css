@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* 更新情報側 */
+div.setting_info {
+	display: inline-block;
+	margin: 10px 0 10px 10px;
+	padding: 5px;
+	width: auto;
+	height: auto;
+	background: #006699;
+	font-size: 14px;
+	color: #FFFFFF;
+	
+	border-radius: 2px;
+}
+div.setting_info:hover {	background: #0099CC;}
+
+dl.announcement {
+	display: block;
+	padding: 0 0 0 5px;
+	width: 1000px;
+	height: auto;
+	font-size: 12px;
+}
+dl.announcement {
+	margin: 0 0 0 5px;
+}
+dl.announcement dt {
+	float: left;
+	margin: 0 0 2px 0;
+	padding: 5px;
+	width: 250px;
+	height: 16px;
+	background: #eef9ff;
+	border: 1px solid #006699;
+	border-width: 1px 0 1px 1px;
+	font-weight: normal;
+}
+dl.announcement dd {
+	float: left;
+	margin: 0 0 2px 0;
+	padding: 5px;
+	width: 700px;
+	height: 16px;
+	background: #eef9ff;
+	border: 1px solid #006699;
+	border-width: 1px 1px 1px 0;
+	font-weight: normal;
+}
+dl.announcement .even {
+	background: #cceeff;
+}
+
+dl.announcement a {
+	color: #0000ff;
+}
+dl.announcement a:hover {
+	background: #ddffaa;
+}
+
+div#inbox dl.announcement dd span.check {
+	color: #0066ff;
+}
+
+
+/* メモ機能側 */
+dl.headline {
+	clear:both;
+	padding: 10px;
+	border-bottom: solid 1px #CCCCCC;
+}
+dl.headline dt {
+	padding: 10px 0px 5px 0px;
+	font-size: 16px;
+}
+dl.headline dd {
+	margin-left: 20px;
+	line-height: 1.5em;
+	font-size: 14px;
+}
+dl.headline dd span {
+	display: block;
+	font-size: 12px;
+	color: #999999;
+}
+strong.warning {
+	color: #FF0000;
+}
+
+strong.power {
+	color: #00aa00;
+	font-size: 1.5em;
+}
+span.date {
+	font-weight: normal;
+	font-size: 12px;
+	color: #999999;
+}
+
+
+
+body dt.caution {	background: #ffdddd;}
+body dd.caution {	background: #ffdddd;}

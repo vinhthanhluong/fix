@@ -1,0 +1,6 @@
+<FilesMatch "\.dat$">
+	deny from all
+</FilesMatch>
+<FilesMatch "\.backup$">
+	deny from all
+</FilesMatch>

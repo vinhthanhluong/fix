@@ -1,0 +1,73 @@
+@charset "UTF-8";
+select.multiple {
+	width: 300px;
+	height: 100px;
+}
+div#picture {
+	padding: 3px;
+}
+table.list,table.sheet {
+	clear: both;
+	width: 99%;
+}
+table.list tr td {
+	padding: 10px 5px 10px 5px;
+	border-bottom: solid 1px #CCCCCC;
+	font-size: 12px;
+}
+table.list tr td a {
+	display: block;
+	color: #333333;
+}
+a.add {
+	display: block;
+	width: 70px;
+	height: 30px;
+	overflow: hidden;
+	float: right;
+	margin: 5px;
+	background-image: url(images/add.gif);
+	text-indent: -5000px;
+}
+
+table.sheet tr th {
+	width: 70px;
+	padding: 10px 5px 15px 5px;
+	border-bottom: solid 1px #CCCCCC;
+	text-align: right;
+	font-size: 12px;
+}
+table.sheet tr td {
+	padding: 10px 5px 15px 5px;
+	border-bottom: solid 1px #CCCCCC;
+	font-size: 12px;
+}
+input, select, textarea {	padding: 2px;}
+input#form_registry_id {
+	width: 200px;
+	ime-mode: disabled;
+}
+input#form_registry_password {
+	width: 200px;
+	ime-mode: disabled;
+}
+input#form_registry_value {
+	width: 300px;
+	ime-mode: active;
+}
+input#form_display_name {
+	width: 300px;
+	ime-mode: active;
+}
+textarea#form_registry_note {
+	width: 400px;
+	height: 100px;
+	ime-mode: active;
+}
+form#search {
+	padding: 10px;
+}
+form#search input {
+	width: 300px;
+	padding: 3px;
+}

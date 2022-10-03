@@ -1,0 +1,26 @@
+﻿@charset "UTF-8";
+
+
+dl.mailform {
+	clear: both;
+	width: 96%;
+	padding: 10px;
+}
+dl.mailform dt {
+	height: 22px;
+	padding: 0 5px;
+	border-bottom: solid 1px #CCCCCC;
+	text-align: left;
+	line-height: 22px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000099;
+}
+dl.mailform dd {
+	padding: 5px;
+	font-size: 12px;
+}
+dt.fmail_error_line, dd.fmail_error_line, .fmail_error {
+	background-color: #FFEEEE;
+	color: #FF0000;
+}

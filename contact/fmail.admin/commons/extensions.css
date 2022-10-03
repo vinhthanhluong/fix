@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+img.button {
+	cursor: pointer;
+}
+
+hr {
+	clear: both;
+	margin: 0px 10px 0px 10px;
+	border-color: #FFFFFF;
+	border-style: none;
+	border: solid 1px #FFFFFF;
+}
+ul.tree {
+	height: 24px;
+	border-bottom: solid 1px #CCCCCC;
+}
+ul.tree li {
+	float: left;
+	padding: 5px 10px 5px 5px;
+	background-image: url(../images/sp.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	font-size: 10px;
+}
+div#sidebar ul {
+	
+}
+div#sidebar ul li {
+	border-bottom: solid 1px #CCCCCC;
+	line-height: 1em;
+}
+div#sidebar ul li a {
+	display: block;
+	height: 30px!important;
+	height/**/: 35px;
+	padding: 5px 5px 0px 10px;
+	background-color: #FFFFFF;
+	background-image: url(../images/li.gif);
+	background-position: 0px 0px;
+	line-height: 14px;
+	font-size: 12px;
+	color: #333333;
+}
+div#sidebar ul li a.module_active {
+	background-position: 0px -80px;
+}
+div#sidebar ul li a:active {
+}
+div#sidebar ul li a:link {
+}
+div#sidebar ul li a:visited {
+}
+div#sidebar ul li a:hover {
+	background-position: 0px -40px;
+	color: #FFFFFF;
+}
+div#sidebar ul li a:hover span {
+	line-height: normal;
+	color: #CCCCCC;
+}
+div#sidebar ul li a.module_active:hover {
+	background-position: 0px -120px;
+	color: #FFFFFF;
+}
+div#sidebar ul li a span {
+	display: block;
+	padding: 0px 0px 0px 0px;
+	/*background-color: #FF0000;*/
+	line-height: normal;
+	font-size: 8px;
+	color: #888888;
+}
+a#logout {
+	display: block;
+	width: 70px;
+	height: 20px;
+	margin: 0px 20px 0px 0px;
+	float: right;
+	background-image: url(../images/btn_logout.png);
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/btn_logout.png', sizingMethod='scale');
+	text-indent: -5000px;
+}
+a#logout:hover {	background-position: -70px 0;}
